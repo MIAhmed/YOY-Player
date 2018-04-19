@@ -41,8 +41,6 @@ C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\De
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe.config
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.pdb
-C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\AltoControls.dll
-C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\AltoControls.pdb
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.AudioLog.resources
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.FileSelection.resources
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
@@ -50,3 +48,4 @@ C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\De
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.exe
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.pdb
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache
