@@ -1,0 +1,52 @@
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe.config
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.FileSelection.resources
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.pdb
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.exe
+c:\users\administrator.isuitetravel\documents\visual studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.pdb
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.AudioLog.resources
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-header.png
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-default.png
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\img-logo-yoy.png
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\img-icon-login.png
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.bmp
+C:\Users\Administrator.ISUITETRAVEL\Documents\Visual Studio 2015\Projects\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.png
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-header.png
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-default.png
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\img-logo-yoy.png
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\img-icon-login.png
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.bmp
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.png
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe.config
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.pdb
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.AudioLog.resources
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.FileSelection.resources
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.exe
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.pdb
+D:\LatestPlayer\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-header.png
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-default.png
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\img-logo-yoy.png
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\img-icon-login.png
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.bmp
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.png
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe.config
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.exe
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\YOYPLAYER.pdb
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\AltoControls.dll
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\bin\Debug\AltoControls.pdb
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.AudioLog.resources
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.FileSelection.resources
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.exe
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOYPLAYER\YOYPLAYER\YOYPLAYER\obj\Debug\YOYPLAYER.pdb
