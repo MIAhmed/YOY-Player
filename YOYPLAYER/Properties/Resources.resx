@@ -118,34 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bg-header" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg-header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HomePage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomePage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img-icon-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img-icon-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg-input-placeholder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg-input-placeholder2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg-input-placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg-input-placeholder1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loginTittle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginTittle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Montserrat_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Montserrat-Bold.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="loginFrom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginFrom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Montserrat_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Montserrat-Medium.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="FileSelectionTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FileSelectionTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Montserrat_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Montserrat-Regular.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Montserrat_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Montserrat-Bold.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loginTittle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginTittle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg-header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img-icon-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img-icon-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginFrom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginFrom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg-input-placeholder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-input-placeholder2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img-logo-yoy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img-logo-yoy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Montserrat_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Montserrat-Medium.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="bg-default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-default1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg-input-placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-input-placeholder1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainpage_top_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainpage_top_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

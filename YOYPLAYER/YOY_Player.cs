@@ -21,6 +21,7 @@ namespace YOYPLAYER
 
         string strEmailCaption = "Correo Electrónico";
         string strPasswordCaption = "Contraseña";
+        static bool isLoginUser = false;
         //internal static readonly HttpClient client = new HttpClient();
         //internal static string UserName = "";
         //internal static string Password = "";
@@ -28,7 +29,7 @@ namespace YOYPLAYER
 
         public YOY_Player()
         {
-            
+
             InitializeComponent();
             CustomFonts.LoadFonts();
             //string image_outputDir = Directory.GetCurrentDirectory();
@@ -37,9 +38,9 @@ namespace YOYPLAYER
             btnSubmit.Font = CustomFonts.GetMontserrat_Bold(btnSubmit.Font.Size);
             //this.BackColor = Color.Transparent;
             txtEmail.Text = strEmailCaption;
-            txtPassword.Text= strPasswordCaption;
-            
-            txtEmail.Font = CustomFonts.GetMontserrat_Regular(txtEmail.Font.Size);   
+            txtPassword.Text = strPasswordCaption;
+
+            txtEmail.Font = CustomFonts.GetMontserrat_Regular(txtEmail.Font.Size);
             txtPassword.Font = CustomFonts.GetMontserrat_Regular(txtPassword.Font.Size);
             //lbl_help.Font = CustomFonts.GetMontserrat_Medium(lbl_help.Font.Size);
             lbl_help.Font = new Font(CustomFonts.GetMontserrat_Medium(lbl_help.Font.Size), lbl_help.Font.Style);
@@ -51,7 +52,7 @@ namespace YOYPLAYER
             //txtEmail.LostFocus += new EventHandler(AddText);
         }
 
-   
+
         public void RemoveText(object sender, EventArgs e)
         {
             txtEmail.Text = "";
@@ -66,32 +67,40 @@ namespace YOYPLAYER
 
         private async void btnSubmit_Click(object sender, EventArgs e)
         {
-            var UserName = txtEmail.Text.Trim();
-            var Password = txtPassword.Text.Trim();
-            YOYPLAYER.Properties.Settings.Default.UserName = UserName;
-            YOYPLAYER.Properties.Settings.Default.Password = Password;
-
-            if (UserName == "yupi@test.com" && Password == "asdf123")
+            try
             {
+                var UserName = txtEmail.Text.Trim();
+                var Password = txtPassword.Text.Trim();
+                YOYPLAYER.Properties.Settings.Default.UserName = UserName;
+                YOYPLAYER.Properties.Settings.Default.Password = Password;
+
                 btnSubmit.Enabled = false;
                 lbl_help.Text = "Loading......";
                 await FirstRequest();
 
                 btnSubmit.Enabled = true;
-                FileSelection f2 = new FileSelection(); //this is the change, code for redirect
-                var result = f2.ShowDialog();
-                if (result != DialogResult.Cancel)
-                    this.Close();
-                //SecondRequest().GetAwaiter().GetResult();
-            }
-            else
-            {
 
+                if (isLoginUser)
+                {
+                    frmMain f2 = new frmMain(); //this is the change, code for redirect
+                    var result = f2.ShowDialog();
+                    if (result != DialogResult.Cancel)
+                        this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("INVALID USER NAME OR PASSWORD");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         public static async Task FirstRequest()
         {
+
             var values = new Dictionary<string, string>
             {
                { "grant_type", "password" },
@@ -104,18 +113,21 @@ namespace YOYPLAYER
             using (HttpClient client = new HttpClient())
             {
                 var response = await client.PostAsync("https://data-mng-yoy.azurewebsites.net/token", content);
-                var responseString = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseString = await response.Content.ReadAsStringAsync();
 
-                var json = JsonConvert.DeserializeObject<ResponseData>(responseString);
-                YOYPLAYER.Properties.Settings.Default.Token = json.access_token;
-                YOYPLAYER.Properties.Settings.Default.Save();
+                    var json = JsonConvert.DeserializeObject<ResponseData>(responseString);
+                    YOYPLAYER.Properties.Settings.Default.Token = json.access_token;
+                    YOYPLAYER.Properties.Settings.Default.Save();
+                    isLoginUser = true;
+                }
+
             }
-
-
 
         }
 
-       
+
 
         private void YOY_Player_Load(object sender, EventArgs e)
         {
@@ -125,7 +137,7 @@ namespace YOYPLAYER
 
         private void YOY_Player_Paint(object sender, PaintEventArgs e)
         {
-          
+
         }
 
         private void txtEmail_Enter(object sender, EventArgs e)
@@ -133,7 +145,7 @@ namespace YOYPLAYER
             if (txtEmail.Text == strEmailCaption)
             {
                 txtEmail.Text = "";
-            } 
+            }
         }
 
         private void txtEmail_Leave(object sender, EventArgs e)
@@ -155,7 +167,7 @@ namespace YOYPLAYER
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-            if (txtPassword.Text == strPasswordCaption);
+            if (txtPassword.Text == strPasswordCaption)
             {
                 txtPassword.Text = "";
                 txtPassword.PasswordChar = '*';

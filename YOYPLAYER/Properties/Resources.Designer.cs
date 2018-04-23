@@ -63,6 +63,16 @@ namespace YOYPLAYER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_button {
+            get {
+                object obj = ResourceManager.GetObject("bg-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg_default {
             get {
                 object obj = ResourceManager.GetObject("bg-default", resourceCulture);
@@ -103,9 +113,39 @@ namespace YOYPLAYER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FileSelectionTitle {
+            get {
+                object obj = ResourceManager.GetObject("FileSelectionTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomePage1 {
+            get {
+                object obj = ResourceManager.GetObject("HomePage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_icon_login {
             get {
                 object obj = ResourceManager.GetObject("img-icon-login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_logo_yoy {
+            get {
+                object obj = ResourceManager.GetObject("img-logo-yoy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +166,26 @@ namespace YOYPLAYER.Properties {
         internal static System.Drawing.Bitmap loginTittle {
             get {
                 object obj = ResourceManager.GetObject("loginTittle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainPage {
+            get {
+                object obj = ResourceManager.GetObject("MainPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainpage_top_logo {
+            get {
+                object obj = ResourceManager.GetObject("mainpage_top_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

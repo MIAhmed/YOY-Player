@@ -30,7 +30,16 @@ namespace YOYPLAYER
         {
             InitializeComponent();
             this.Player.LoadCompleted += new AsyncCompletedEventHandler(Player_LoadCompleted);
-            
+            comboBox1.BringToFront();
+            comboBox2.BringToFront();
+            comboBox3.BringToFront();
+            CustomFonts.LoadFonts();
+            btnSubmit.Font = CustomFonts.GetMontserrat_Bold(btnSubmit.Font.Size);
+            comboBox1.Font = CustomFonts.GetMontserrat_Regular(comboBox1.Font.Size);
+            comboBox2.Font = CustomFonts.GetMontserrat_Regular(comboBox2.Font.Size);
+            comboBox3.Font = CustomFonts.GetMontserrat_Regular(comboBox3.Font.Size);
+
+
         }
 
         private async void FileSelection_Load(object sender, System.EventArgs e)
@@ -160,27 +169,6 @@ namespace YOYPLAYER
 
         }
 
-        private async void button1_Click(object sender, EventArgs e)
-        {
-            button1.Enabled = false;
-            label1.Text = "Playing......";
-            await ThirdRequest();
-            //Start Playing Audio
-            
-            //MediaPlayer.MediaPly obj = new MediaPlayer.MediaPly();
-            //obj.LoadFile(YOYPLAYER.Properties.Settings.Default.FileName, null);
-
-            try
-            {
-                // Replace this file name with a valid file name.
-                this.Player.SoundLocation = YOYPLAYER.Properties.Settings.Default.FileName;
-                this.Player.LoadAsync();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error loading sound");
-            }
-        }
 
         // This is the event handler for the LoadCompleted event.
         void Player_LoadCompleted(object sender, AsyncCompletedEventArgs e)
@@ -204,47 +192,43 @@ namespace YOYPLAYER
             await SecondRequest();
         }
 
-        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void btnSubmit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            this.ShowForm2(typeof(YOY_Player));
-        }
+            btnSubmit.Enabled = false;
+            // //label1.Text = "Playing......";
+            await ThirdRequest();
+            //Start Playing Audio
 
-        private void ShowForm2(System.Type type)
-        {
-            FormCollection openForms = Application.OpenForms;
-            bool flag = false;
-            foreach (Form form in (ReadOnlyCollectionBase)openForms)
+            //MediaPlayer.MediaPly obj = new MediaPlayer.MediaPly();
+            //obj.LoadFile(YOYPLAYER.Properties.Settings.Default.FileName, null);
+
+            try
             {
-                if (form.GetType() == type)
-                {
-                    flag = true;
-                    form.BringToFront();
-                    form.WindowState = FormWindowState.Normal;
-                    break;
-                }
+                // Replace this file name with a valid file name.
+                this.Player.SoundLocation = YOYPLAYER.Properties.Settings.Default.FileName;
+                this.Player.LoadAsync();
             }
-            if (flag)
-                return;
-            this.ShowNewForm(Activator.CreateInstance(type) as Form);
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error loading sound");
+            }
         }
 
-        public void ShowNewForm(Form frm)
-        {
-            Form form = frm;
-            //form.MdiParent = (Form)this;
-            form.StartPosition = FormStartPosition.CenterScreen;
-            form.Show();
-        }
-
-        private void fileSelectionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void audioLogToolStripMenuItem_Click(object sender, EventArgs e)
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.ShowForm2(typeof(AudioLog));
+
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
