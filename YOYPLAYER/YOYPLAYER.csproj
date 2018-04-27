@@ -103,6 +103,9 @@
       <DependentUpon>YOY_Player.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="bin\Debug\YOYPLAYER.exe.config" />
+    <None Include="bin\Debug\YOYPLAYER.vshost.exe.config" />
+    <None Include="bin\Debug\YOYPLAYER.vshost.exe.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -164,6 +167,20 @@
   <ItemGroup>
     <None Include="Resources\mainpage_top_logo.png" />
     <None Include="Resources\bg-button.png" />
+    <Content Include="bin\Debug\AltoControls.dll" />
+    <Content Include="bin\Debug\AltoControls.pdb" />
+    <Content Include="bin\Debug\Interop.QuartzTypeLib.dll" />
+    <Content Include="bin\Debug\log.txt" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Resources\bg-default.png" />
+    <Content Include="bin\Debug\Resources\bg-header.png" />
+    <Content Include="bin\Debug\Resources\bg-input-placeholder.bmp" />
+    <Content Include="bin\Debug\Resources\bg-input-placeholder.png" />
+    <Content Include="bin\Debug\Resources\img-icon-login.png" />
+    <Content Include="bin\Debug\Resources\img-logo-yoy.png" />
+    <Content Include="bin\Debug\YOYPLAYER.exe" />
+    <Content Include="bin\Debug\YOYPLAYER.pdb" />
+    <Content Include="bin\Debug\YOYPLAYER.vshost.exe" />
     <Content Include="Resources\FileSelectionTitle.png" />
     <None Include="Resources\HomePage1.png" />
     <None Include="Resources\MainPage.png" />

@@ -83,3 +83,21 @@ C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOY-Player-master\YOY-Player-master\
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
 C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\YOYPLAYER.exe.config
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.exe
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.pdb
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-header.png
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-default.png
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\img-logo-yoy.png
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\img-icon-login.png
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.bmp
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.png
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\YOYPLAYER.exe
+F:\YOY-Player-master\YOYPLAYER\bin\Debug\YOYPLAYER.pdb
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.AudioLog.resources
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.FileSelection.resources
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.frmMain.resources
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
+F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
+C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache

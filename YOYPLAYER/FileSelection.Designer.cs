@@ -56,7 +56,7 @@ namespace YOYPLAYER
             this.comboBox1.Location = new System.Drawing.Point(51, 237);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(184, 24);
-            this.comboBox1.TabIndex = 1;
+            this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
@@ -134,7 +134,7 @@ namespace YOYPLAYER
             this.btnSubmit.Location = new System.Drawing.Point(2, 454);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(289, 65);
-            this.btnSubmit.TabIndex = 14;
+            this.btnSubmit.TabIndex = 3;
             this.btnSubmit.Text = "REGISTRARME";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -145,7 +145,7 @@ namespace YOYPLAYER
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(50, 127);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(196, 54);
+            this.pictureBox4.Size = new System.Drawing.Size(196, 57);
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
@@ -165,9 +165,12 @@ namespace YOYPLAYER
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FileSelection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FileSelection";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FileSelection_FormClosing);
             this.Load += new System.EventHandler(this.FileSelection_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

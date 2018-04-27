@@ -15,7 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-namespace YOYPLAYER 
+namespace YOYPLAYER
 {
     public partial class FileSelection : Form
     {
@@ -25,8 +25,8 @@ namespace YOYPLAYER
         internal static Dictionary<string, string> dict_department = new Dictionary<string, string>();
         internal static readonly HttpClient client = new HttpClient();
         private SoundPlayer Player = new SoundPlayer();
-       // MediaPly _mp = null;
-        public  FileSelection()
+        // MediaPly _mp = null;
+        public FileSelection()
         {
             InitializeComponent();
             this.Player.LoadCompleted += new AsyncCompletedEventHandler(Player_LoadCompleted);
@@ -42,10 +42,6 @@ namespace YOYPLAYER
 
         }
 
-        private async void FileSelection_Load(object sender, System.EventArgs e)
-        {
-           await SecondRequest();
-        }
 
         public async Task SecondRequest()
         {
@@ -128,7 +124,7 @@ namespace YOYPLAYER
             // var responseString = await response.Content.ReadAsStringAsync();
 
             JToken token = JToken.Parse(responseString);
-            string mimeType = token.Value<string>("mimeType"); 
+            string mimeType = token.Value<string>("mimeType");
             string fileName = token.Value<string>("fileName");
             string fileId = token.Value<string>("fileId");
             string nextSync = token.Value<string>("nextSync");
@@ -145,7 +141,7 @@ namespace YOYPLAYER
                 Directory.CreateDirectory(YOYPLAYER.Properties.Settings.Default.DirectoryName);
             }
 
-            using (var request = new HttpRequestMessage(HttpMethod.Get, string.Format("https://data-mng-yoy.azurewebsites.net/api/ContentStream/Get?userId={0}&key={1}&id={2}&downloadType=1", YOYPLAYER.Properties.Settings.Default.UserName, Branch_AccessKey[comboBox2.SelectedValue.ToString()],fileId)))
+            using (var request = new HttpRequestMessage(HttpMethod.Get, string.Format("https://data-mng-yoy.azurewebsites.net/api/ContentStream/Get?userId={0}&key={1}&id={2}&downloadType=1", YOYPLAYER.Properties.Settings.Default.UserName, Branch_AccessKey[comboBox2.SelectedValue.ToString()], fileId)))
             {
                 using (
                     Stream contentStream = await (await client.SendAsync(request)).Content.ReadAsStreamAsync(),
@@ -161,11 +157,11 @@ namespace YOYPLAYER
                 YOYPLAYER.Properties.Settings.Default.FileName = YOYPLAYER.Properties.Settings.Default.DirectoryName + "\\" + fileName;
 
             }
-            
 
-            _log.LogWrite(string.Format("FileType:{0} |  FileName:{1} |  NextSync:{2}  |  RequestDate:{3}",mimeType,fileName, DateTime.Parse(nextSync).ToUniversalTime(),DateTime.Parse(requestDate).ToUniversalTime()));
 
-            
+            _log.LogWrite(string.Format("FileType:{0} |  FileName:{1} |  NextSync:{2}  |  RequestDate:{3}", mimeType, fileName, DateTime.Parse(nextSync).ToUniversalTime(), DateTime.Parse(requestDate).ToUniversalTime()));
+
+
 
         }
 
@@ -178,7 +174,7 @@ namespace YOYPLAYER
                 try
                 {
                     this.Player.PlayLooping();
-                    
+
                 }
                 catch (Exception ex)
                 {
@@ -189,14 +185,25 @@ namespace YOYPLAYER
 
         private async void FileSelection_Load_1(object sender, EventArgs e)
         {
-            await SecondRequest();
+            try { await SecondRequest(); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private async void btnSubmit_Click(object sender, EventArgs e)
         {
             btnSubmit.Enabled = false;
             // //label1.Text = "Playing......";
-            await ThirdRequest();
+            try
+            { await ThirdRequest(); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             //Start Playing Audio
 
             //MediaPlayer.MediaPly obj = new MediaPlayer.MediaPly();
@@ -207,6 +214,12 @@ namespace YOYPLAYER
                 // Replace this file name with a valid file name.
                 this.Player.SoundLocation = YOYPLAYER.Properties.Settings.Default.FileName;
                 this.Player.LoadAsync();
+
+                frmMain f2 = new frmMain(); //this is the change, code for redirect
+                this.Hide();
+                var result = f2.ShowDialog();
+                if (result != DialogResult.Cancel)
+                    this.Close();
             }
             catch (Exception ex)
             {
@@ -229,6 +242,12 @@ namespace YOYPLAYER
 
         }
 
+        private void FileSelection_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
 
+            Environment.Exit(0);
+
+        }
     }
 }

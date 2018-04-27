@@ -82,7 +82,8 @@ namespace YOYPLAYER
 
                 if (isLoginUser)
                 {
-                    frmMain f2 = new frmMain(); //this is the change, code for redirect
+                    FileSelection f2 = new FileSelection(); //this is the change, code for redirect
+                    this.Hide();
                     var result = f2.ShowDialog();
                     if (result != DialogResult.Cancel)
                         this.Close();
@@ -90,11 +91,13 @@ namespace YOYPLAYER
                 else
                 {
                     MessageBox.Show("INVALID USER NAME OR PASSWORD");
+                    lbl_help.Text = "";
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                lbl_help.Text = "";
             }
         }
 

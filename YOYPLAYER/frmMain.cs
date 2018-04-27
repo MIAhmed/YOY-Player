@@ -56,5 +56,12 @@ namespace YOYPLAYER
         {
 
         }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
+
+            Environment.Exit(0);
+        }
     }
 }
