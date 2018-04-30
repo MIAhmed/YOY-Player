@@ -198,4 +198,33 @@ namespace YOYPLAYER
         public DateTime NextSync { get; set; }
         public DateTime RequestDate { get; set; }
     }
+
+    public class Commerces
+    {
+        public string id { get; set; }
+        public string name { get; set; }
+        public string logo { get; set; }
+
+    }
+
+    public class Branches
+    {
+
+        public string commerce_id { get; set; }
+        public string id { get; set; }
+        public string name { get; set; }
+        public string accessKey { get; set; }
+
+    }
+
+    public class departments
+    {
+
+        public string Branche_id { get; set; }
+        public string id { get; set; }
+        public string name { get; set; }
+
+    }
+
+
 }

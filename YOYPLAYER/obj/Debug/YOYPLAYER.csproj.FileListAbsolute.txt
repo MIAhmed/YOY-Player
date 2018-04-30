@@ -100,4 +100,22 @@ F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.frmMain.resources
 F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
 F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
 F:\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache
-C:\Users\Iqbal Ahmed\Desktop\Desktop Player\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache
+D:\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\YOYPLAYER.exe.config
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.exe
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.pdb
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-header.png
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-default.png
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\img-logo-yoy.png
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\img-icon-login.png
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.bmp
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\Resources\bg-input-placeholder.png
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\YOYPLAYER.exe
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\bin\Debug\YOYPLAYER.pdb
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csprojResolveAssemblyReference.cache
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.AudioLog.resources
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.FileSelection.resources
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.frmMain.resources
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.Properties.Resources.resources
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.YOY_Player.resources
+D:\LatestPlayer\YOY-Player-master\YOY-Player-master\YOY-Player-master\YOYPLAYER\obj\Debug\YOYPLAYER.csproj.GenerateResource.Cache

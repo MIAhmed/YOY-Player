@@ -31,6 +31,7 @@ namespace YOYPLAYER
         private void btnSubmit3_Click(object sender, EventArgs e)
         {
             FileSelection f2 = new FileSelection(); //this is the change, code for redirect
+            this.Hide();
             var result = f2.ShowDialog();
             if (result != DialogResult.Cancel)
                 this.Close();
@@ -39,6 +40,7 @@ namespace YOYPLAYER
         private void btnSubmit1_Click(object sender, EventArgs e)
         {
             YOY_Player f2 = new YOY_Player(); //this is the change, code for redirect
+            this.Hide();
             var result = f2.ShowDialog();
             if (result != DialogResult.Cancel)
                 this.Close();
@@ -62,6 +64,11 @@ namespace YOYPLAYER
             Application.ExitThread();
 
             Environment.Exit(0);
+        }
+
+        private void txt_first_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,7 @@ namespace YOYPLAYER
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -38,10 +39,12 @@ namespace YOYPLAYER
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -135,7 +138,7 @@ namespace YOYPLAYER
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(289, 65);
             this.btnSubmit.TabIndex = 3;
-            this.btnSubmit.Text = "REGISTRARME";
+            this.btnSubmit.Text = "CONTINUAR";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -176,6 +179,7 @@ namespace YOYPLAYER
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,5 +194,6 @@ namespace YOYPLAYER
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

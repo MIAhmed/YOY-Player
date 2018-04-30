@@ -106,11 +106,11 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Image = global::YOYPLAYER.Properties.Resources.bg_default;
-            this.label1.Location = new System.Drawing.Point(45, 211);
+            this.label1.Location = new System.Drawing.Point(59, 211);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 25);
+            this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 19;
-            this.label1.Text = "App Status:";
+            this.label1.Text = "Estado:";
             // 
             // label2
             // 
@@ -118,7 +118,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Lime;
             this.label2.Image = global::YOYPLAYER.Properties.Resources.bg_default;
-            this.label2.Location = new System.Drawing.Point(183, 211);
+            this.label2.Location = new System.Drawing.Point(154, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 25);
             this.label2.TabIndex = 20;
@@ -152,6 +152,7 @@
             this.txt_first.TabIndex = 23;
             this.txt_first.Text = "CAMBIAR UBICACIÓN";
             this.txt_first.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_first.TextChanged += new System.EventHandler(this.txt_first_TextChanged);
             // 
             // txt_second
             // 
