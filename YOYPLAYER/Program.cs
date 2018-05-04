@@ -15,7 +15,7 @@ namespace YOYPLAYER
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new YOY_Player());
+            Application.Run(new YOY_Player(false,false));
         }
     }
 }

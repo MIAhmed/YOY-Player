@@ -41,7 +41,7 @@ namespace YOYPLAYER
             comboBox1.Font = CustomFonts.GetMontserrat_Regular(comboBox1.Font.Size);
             comboBox2.Font = CustomFonts.GetMontserrat_Regular(comboBox2.Font.Size);
             comboBox3.Font = CustomFonts.GetMontserrat_Regular(comboBox3.Font.Size);
-            
+
 
         }
 
@@ -194,12 +194,25 @@ namespace YOYPLAYER
                 Directory.CreateDirectory(YOYPLAYER.Properties.Settings.Default.DirectoryName);
             }
 
+            if(!string.IsNullOrEmpty(fileName))
+            {
+                
+                    //delete previous files
+                    var list = Directory.GetFiles(YOYPLAYER.Properties.Settings.Default.DirectoryName, "*.wav");
+                    foreach (var item in list)
+                    {
+                        System.IO.File.Delete(item);
+                    }
+            }
+
             using (var request = new HttpRequestMessage(HttpMethod.Get, string.Format("https://data-mng-yoy.azurewebsites.net/api/ContentStream/Get?userId={0}&key={1}&id={2}&downloadType=1", YOYPLAYER.Properties.Settings.Default.UserName, key, fileId)))
             {
                 using (
                     Stream contentStream = await (await client.SendAsync(request)).Content.ReadAsStreamAsync(),
                     stream = new FileStream(YOYPLAYER.Properties.Settings.Default.DirectoryName + "\\" + fileName, FileMode.Create, FileAccess.Write, FileShare.None, (int)contentStream.Length, true))
                 {
+             
+
                     await contentStream.CopyToAsync(stream);
                 }
             }
@@ -212,7 +225,7 @@ namespace YOYPLAYER
             }
 
 
-            _log.LogWrite(string.Format("FileType:{0} |  FileName:{1} |  NextSync:{2}  |  RequestDate:{3}", mimeType, fileName, DateTime.Parse(nextSync).ToUniversalTime(), DateTime.Parse(requestDate).ToUniversalTime()));
+            _log.LogWrite(string.Format("UserName :{0} | FileType:{1} |  FileName:{2} |  NextSync:{3}  |  RequestDate:{4}", YOYPLAYER.Properties.Settings.Default.UserName, mimeType, fileName, DateTime.Parse(nextSync).ToUniversalTime(), DateTime.Parse(requestDate).ToUniversalTime()));
 
 
 
@@ -260,7 +273,7 @@ namespace YOYPLAYER
             catch (Exception ex)
             {
                 btnSubmit.Enabled = true;
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Ha ocurrido un error, inténtalo de nuevo");
                 return;
 
             }
@@ -284,7 +297,7 @@ namespace YOYPLAYER
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error loading sound");
+                MessageBox.Show(ex.Message, "Error al cargar el sonido");
             }
         }
 
@@ -328,9 +341,11 @@ namespace YOYPLAYER
 
         private void FileSelection_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.ExitThread();
-
-            Environment.Exit(0);
+            e.Cancel = true;
+            YOY_Player obj = new YOY_Player(true,false);
+            this.Hide();
+            obj.ShowDialog();
+            
 
         }
     }

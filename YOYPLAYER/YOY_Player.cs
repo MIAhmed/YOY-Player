@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -22,37 +23,52 @@ namespace YOYPLAYER
         string strEmailCaption = "Correo Electrónico";
         string strPasswordCaption = "Contraseña";
         static bool isLoginUser = false;
+        private SoundPlayer Player = new SoundPlayer();
+        bool ClosedRequest = false;
+        bool ChangeUserRequest = false;
         //internal static readonly HttpClient client = new HttpClient();
         //internal static string UserName = "";
         //internal static string Password = "";
         //internal static string token = "";
 
-        public YOY_Player()
+        public YOY_Player(bool IsCloseRequest,bool IsChangeUserRequest)
         {
 
             InitializeComponent();
             CustomFonts.LoadFonts();
-            //string image_outputDir = Directory.GetCurrentDirectory();
-            //Bitmap bitmap = new Bitmap(image_outputDir + "\\Resources\\bg-input-placeholder.png");
-            //SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+
             btnSubmit.Font = CustomFonts.GetMontserrat_Bold(btnSubmit.Font.Size);
-            //this.BackColor = Color.Transparent;
             txtEmail.Text = strEmailCaption;
             txtPassword.Text = strPasswordCaption;
-
+            this.Player.LoadCompleted += new AsyncCompletedEventHandler(Player_LoadCompleted);
             txtEmail.Font = CustomFonts.GetMontserrat_Regular(txtEmail.Font.Size);
             txtPassword.Font = CustomFonts.GetMontserrat_Regular(txtPassword.Font.Size);
-            //lbl_help.Font = CustomFonts.GetMontserrat_Medium(lbl_help.Font.Size);
             lbl_help.Font = new Font(CustomFonts.GetMontserrat_Medium(lbl_help.Font.Size), lbl_help.Font.Style);
-            //Clipboard.SetDataObject(bitmap);
-            //DataFormats.Format format = DataFormats.GetFormat(DataFormats.Bitmap);
-            //txtEmail.Paste(format);
 
-            //txtEmail.GotFocus +=new EventHandler(RemoveText);
-            //txtEmail.LostFocus += new EventHandler(AddText);
+            if (IsCloseRequest)
+                ClosedRequest= IsCloseRequest;
+
+            if (IsChangeUserRequest)
+                ChangeUserRequest = IsChangeUserRequest;
+
         }
 
+        // This is the event handler for the LoadCompleted event.
+        void Player_LoadCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            if (Player.IsLoadCompleted)
+            {
+                try
+                {
+                    this.Player.PlayLooping();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error playing sound");
+                }
+            }
+        }
         public void RemoveText(object sender, EventArgs e)
         {
             txtEmail.Text = "";
@@ -71,28 +87,41 @@ namespace YOYPLAYER
             {
                 var UserName = txtEmail.Text.Trim();
                 var Password = txtPassword.Text.Trim();
-                YOYPLAYER.Properties.Settings.Default.UserName = UserName;
-                YOYPLAYER.Properties.Settings.Default.Password = Password;
-
-                btnSubmit.Enabled = false;
-                lbl_help.Text = "Loading......";
-                await FirstRequest();
-
-                btnSubmit.Enabled = true;
-
-                if (isLoginUser)
+                if (UserName != "" && UserName != "Correo Electrónico" && Password != "" && Password != "Contraseña")
                 {
-                    FileSelection f2 = new FileSelection(); //this is the change, code for redirect
-                    this.Hide();
-                    var result = f2.ShowDialog();
-                    if (result != DialogResult.Cancel)
-                        this.Close();
+                    YOYPLAYER.Properties.Settings.Default.UserName = UserName;
+                    YOYPLAYER.Properties.Settings.Default.Password = Password;
+
+                    btnSubmit.Enabled = false;
+                    lbl_help.Text = "Loading......";
+                    await FirstRequest();
+
+                    btnSubmit.Enabled = true;
+
+                    if (isLoginUser)
+                    {
+                        if(ClosedRequest)
+                        {
+                            Application.ExitThread();
+
+                            Environment.Exit(0);
+                        }
+
+                        FileSelection f2 = new FileSelection(); //this is the change, code for redirect
+                        this.Hide();
+                        var result = f2.ShowDialog();
+                        if (result != DialogResult.Cancel)
+                            this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("USUARIO O CONTRASEÑA INVALIDO");
+                        lbl_help.Text = "";
+                    }
                 }
                 else
-                {
-                    MessageBox.Show("INVALID USER NAME OR PASSWORD");
-                    lbl_help.Text = "";
-                }
+                    MessageBox.Show("USUARIO O CONTRASEÑA INVALIDO");
+
             }
             catch (Exception ex)
             {
@@ -136,6 +165,31 @@ namespace YOYPLAYER
         {
             //txtEmail.Text = "User Name";
             //txtPassword.Text = "Password";
+            try
+            {
+                if(!ClosedRequest && !ChangeUserRequest)
+                {
+                    // Replace this file name with a valid file name.
+                    string[] dirs = Directory.GetFiles(YOYPLAYER.Properties.Settings.Default.DirectoryName, "*.wav");
+                    if (dirs.Length > 0)
+                    {
+                        this.Player.SoundLocation = dirs[0];
+                        this.Player.LoadAsync();
+
+                        frmMain f2 = new frmMain(); //this is the change, code for redirect
+                        this.Hide();
+                        var result = f2.ShowDialog();
+                        if (result != DialogResult.Cancel)
+                            this.Close();
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al cargar el sonido");
+            }
         }
 
         private void YOY_Player_Paint(object sender, PaintEventArgs e)
@@ -193,6 +247,7 @@ namespace YOYPLAYER
 
     public class FileInfo
     {
+        public string UserName { get; set; }
         public string FileType { get; set; }
         public string FileName { get; set; }
         public DateTime NextSync { get; set; }
